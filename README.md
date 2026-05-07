@@ -55,7 +55,7 @@ This will compile the module, run the tests, and leave the module jar in the `ta
 
 The module jar contains all required dependencies.
 
-To install the built jar, use the `repo install` command shown above, replacing <jar> with the path to the generated file.
+To install the built jar, use the `repo install` command shown above, replacing `<jar>` with the path to the generated file.
 
 License
 -------
