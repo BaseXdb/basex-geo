@@ -23,6 +23,11 @@
 
   <repositories>
     <repository>
+      <id>basex</id>
+      <name>BaseX Maven Repository</name>
+      <url>https://files.basex.org/maven</url>
+    </repository>
+    <repository>
       <id>osgeo</id>
       <name>Open Source Geospatial Foundation Repository</name>
       <url>https://repo.osgeo.org/repository/release</url>
@@ -177,6 +182,13 @@
         </executions>
       </plugin>
     </plugins>
-  </build>
 
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-ssh-external</artifactId>
+        <version>3.5.3</version>
+      </extension>
+    </extensions>
+  </build>
 </project>
